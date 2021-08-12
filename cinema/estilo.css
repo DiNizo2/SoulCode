@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navegacao_horizontal {
+    padding-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 7px 0 7px;
+}
+
+strong a {
+    color: black;
+}
+
+a:hover {
+    color: #F8C100;
+}
+
+footer {
+    background-color: #3CB4C4;
+    height: 70px;
+}
+
+footer img {
+    padding: 20 px;
+    display: inline;
+    margin: 20px 10px 0 0;
+}
+
+.borda_imagem {
+    border: 2px solid black;
+}
+
+.borda_imagem:hover {
+    border: 2px solid #F8C100;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E1E5E5;
+}
+
+td input {
+    margin-right: 10px;
+}

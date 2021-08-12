@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineCode - Comédia</title>
+    <meta author="Carollina-Eduardo-Ricardo-Marcellyne-Lucas costa">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <table width="100%">
+        <thead bgcolor="#3CB4C4" id="topo">
+            <tr>
+                <th colspan="2">
+                    <header>
+                        <img src="./imagens/soul1.png" alt="logo" width="100" align="left">
+                        <img src="./imagens/cinema.png" alt="cinema" align="right" width="100">
+                        <nav id="navegacao_horizontal">
+                            <strong>
+                                <a href="index.html">HOME</a> |
+                                <a href="contato.html">CADASTRO</a>
+                            </strong>
+                        </nav>
+                    </header>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <main>
+                <tr>                
+                    <td width="80%" bgcolor="#E1E5E5" align="center">
+                        <h1>COMÉDIA</h1><br>                            
+                        <section>
+                            <br><h1>Filmes - Os mais vistos</h1>
+                            <br>
+                            <h2>Vai Que Cola - O Filme</h2>
+                            <br>
+                            <figure>
+                                <img src="./imagens/vai_que_cola_2.jpg" alt="Vai que cola - O Filme" width="750" height="400" style="border: 1px solid black;">                                                    
+                            </figure>
+                            <br>
+                            <p>Quando Valdomiro consegue recuperar sua cobertura no Leblon, ele precisa hospedar os moradores da pensão da Dona Jô, interditada pela Defesa Civil.</p> 
+                            <br>
+                            <label for="nota"><b>Dê uma nota para este filme (0-5)</b></label>
+                            <br>
+                            <input  type="range" id="nota"  min="0" max="5"    step="1" value="0">                              
+                            <br><br>
+                            <h2>Minha mãe é uma peça - O Filme</h2>
+                            <br>
+                            <figure>
+                                <img src="./imagens/minha_mae.jpeg" alt="Minha mãe é uma peça - O Filme" width="750" height="400" style="border: 1px solid black;">                                    
+                            </figure>
+                            <br>
+                            <p>Dona Hermínia (Paulo Gustavo) é uma mulher de meia idade, divorciada do marido (Herson Capri), que a trocou por uma mais jovem (Ingrid Guimarães). Hiperativa, ela não larga o pé de seus filhos Marcelina (Mariana Xavier) e Juliano (Rodrigo Pandolfo), sem se dar conta que eles já estão bem grandinhos.</p>
+                            <br>
+                            <label for="nota"><b>Dê uma nota para este filme (0-5)</b></label>
+                            <br>
+                            <input  type="range" id="nota"  min="0" max="5"    step="1" value="0">                                                       
+                        </section>
+                        <br><br>
+                        <section>
+                            <br>
+                            <h1>Series que todo mundo ama</h1>
+                            <br>
+                            <h2>Friends</h2>
+                            <br>
+                            <figure>
+                                <img src="./imagens/friends.jpg" alt="Friends" width="750" height="400" style="border: 1px solid black;">                                  
+                            </figure>
+                            <br>
+                            <p>Seis jovens são unidos por laços familiares, românticos e, principalmente, de amizade, enquanto tentam vingar em Nova York. Rachel é a garota mimada que deixa o noivo no altar para viver com a amiga dos tempos de escola Monica, sistemática e apaixonada pela culinária. Monica é irmã de Ross, um paleontólogo que é abandonado pela esposa, que descobriu ser lésbica. Do outro lado do corredor do apartamento de Monica e Rachel, moram Joey, um ator frustrado, e Chandler, de profissão misteriosa. A turma é completa pela exótica Phoebe.</p>
+                            <br>
+                            <label for="nota"><b>Dê uma nota para este filme (0-5)</b></label>
+                            <br>
+                            <input  type="range" id="nota"  min="0" max="5"    step="1" value="0">                              
+                            <br><br>                                                              
+                            <figure>
+                                <h2>Um maluco no pedaço</h2>
+                                <br>
+                                <img src="./imagens/Um maluco no pedaço.jpg" alt="Um maluco no pedaço" width="750" height="400" style="border: 1px solid black;">                                   
+                            </figure>
+                            <br>
+                            <p>A série conta a história de Will (Will Smith), um jovem de origem humilde que se muda para um luxuoso bairro na Califórnia. Após arrumar confusão com pessoas perigosas de seu bairro, na Filadélfia, a mãe de Will, temendo pelo futuro de seu filho, resolve mandá-lo para viver com sua irmã Vivian (Janet Hubert-Whitten) e seu cunhado Philip (James Avery), um advogado que se tornou juiz e tem uma vida muita bem sucedida. Contudo, por ser um garoto humilde e não ligar para os estudos, Will vive se comportando de maneira inadequada e provocando trapalhadas aos seus tios e primos na mansão.</p>
+                            <br>
+                            <label for="nota"><b>Dê uma nota para este filme (0-5)</b></label>
+                            <br>
+                            <input  type="range" id="nota"  min="0" max="5"    step="1" value="0">                              
+                            <br><br>
+                        </section>
+                                                
+                    </td>
+            </main>
+                <td align="center" bgcolor="#93CDCD">
+                    <br>
+                    <input list="generos"   placeholder="Pesquisar">
+                    <datalist id="generos">
+                        <option value="Ação">
+                        <option value="Comédia">
+                        <option value="Terror">
+                    </datalist>
+                    <input type="button" value="Pesquisar">                   
+
+                    <aside align="center">
+                        <strong>
+                            <br>
+                            <figure>
+                                <a href="index.html">
+                                    <img src="./imagens/cinema.png" alt="voltar" width="150" class="borda_imagem">
+                                </a>
+                                <figcaption>
+                                    <br>
+                                    <a href="index.html">Voltar</a>
+                                </figcaption>
+                            </figure>
+                            <br>
+                            <figure>
+                                <a href="https://www.youtube.com/watch?v=W6iVPCRflQM" target="blank">
+                                    <img src="./imagens/lostintranslation.jpg" alt="Lost in Translation" width="200" class="borda_imagem">
+                                </a>
+                                <figcaption>
+                                    <a href="https://www.youtube.com/watch?v=W6iVPCRflQM" target="blank">Drama</a>
+                                </figcaption>
+                            </figure>
+                            <br>
+                            <figure>
+                                <a href="https://www.youtube.com/watch?v=92a7Hj0ijLs" target="blank">
+                                    <img src="./imagens/totoro.jpg" alt="Tororo" width="200" class="borda_imagem">
+                                </a>
+                                <figcaption>
+                                    <a href="https://www.youtube.com/watch?v=92a7Hj0ijLs" target="blank">Anime</a>
+                                </figcaption>
+                            </figure>
+                            <br>
+                            <figure>
+                                <a href="https://www.youtube.com/watch?v=g-E-ZSEFk_s" target="blank">
+                                    <img src="./imagens/elise.jpg" alt="Elize" width="200" class="borda_imagem" height="300">
+                                </a>
+                                <figcaption>
+                                    <a href="https://www.youtube.com/watch?v=g-E-ZSEFk_s" target="blank">Documentário</a>
+                                </figcaption>
+                            </figure>
+                            <br>
+                            <figure>
+                                <a href="https://www.youtube.com/watch?v=nBWtTrLxUjM" target="blank">
+                                    <img src="./imagens/cidadededeus.jpg" alt="Cidade de Deus" width="200" class="borda_imagem" height="300">
+                                </a>
+                                <figcaption>
+                                    <a href="https://www.youtube.com/watch?v=nBWtTrLxUjM" target="blank">Nacional</a>
+                                </figcaption>
+                            </figure>
+                            <br>
+                            <figure>
+                                <a href="https://www.youtube.com/watch?v=HWEW_qTLSEE" target="blank">
+                                    <img src="./imagens/up.jpg" alt="Up Altes Aventuras" width="200" class="borda_imagem"
+                                        height="300">
+                                </a>
+                                <figcaption>
+                                    <a href="https://www.youtube.com/watch?v=HWEW_qTLSEE" target="blank">Animação</a>
+                                </figcaption>
+                                <br>
+                            </figure>
+                            <figure>
+                                <a href="terror.html">
+                                    <img src="./imagens/ochamado.jpg" alt="O chamado" width="200" class="borda_imagem"
+                                        height="300">
+                                </a>
+                                <figcaption>
+                                    <a href="terror.html">Terror</a>
+                                </figcaption>
+                            </figure>
+                            <br>
+                            <figure>
+                                <a href="acao.html">
+                                    <img src="./imagens/jack2.jpg" alt="O chamado" width="200" class="borda_imagem"
+                                        height="300">
+                                </a>
+                                <figcaption>
+                                    <a href="acao.html">Ação</a>
+                                </figcaption>
+                            </figure>
+                        </strong>                  
+                    </aside>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <footer>
+        <nav align="center">
+            <a href="https://www.linkedin.com/company/soulcodeacademy/mycompany/" target="blank"><img src="./imagens/linkedin.png" alt="linkedin" width="25"></a>
+            <a href="https://www.instagram.com/soulcodeacademy/" target="blank"><img src="./imagens/insta.png" alt="instagram" width="25"></a>
+            <a href="https://www.facebook.com/SoulCodeAcademy/" target="blank"><img src="./imagens/face.png" alt="facebook" width="25"></a>
+            <a href="https://twitter.com/SoulCodeAcademy/" target="blank"><img src="./imagens/twitter.png" alt="twitter" width="25"></a>
+            <a href="#topo">
+            <img src="./imagens/topo.png" alt="topo" width="40" align="right"><br>
+            <strong>
+            <small>&copy; Copyright 2021, Carolinna - Eduardo - Lucas C - Marcelly - Ricardo N </small>
+            </a>
+            </strong>
+        </nav>
+    </footer>
+        
+</body>
+</html>
