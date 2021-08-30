@@ -1,0 +1,138 @@
+/* Menu de ancora */
+#menu_ancora{
+    display: grid;
+    grid-template-areas: 
+    "a1 a2 a3";
+}
+
+#menu_ancora a{
+    background-color: #8869AD;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+#menu_ancora a:hover{
+    background-color: #8869AD;
+    background-color:#6c757d;
+}
+
+#menu_ancora :nth-child(1){
+    grid-area: a1;
+}
+
+#menu_ancora :nth-child(2){
+    grid-area: a2;
+}
+
+#menu_ancora :nth-child(3){
+    grid-area: a3;
+}
+
+/* Produtos */
+#cards, #cards2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#titulo{
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #8869AD;
+    color: white;
+}
+
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card img{
+    height: 200px;
+}
+/* Pet Hero */
+#hero{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-areas: 
+    "p1 fo"
+    "p1 fo"
+    "p1 ma"
+    ;
+}
+
+#hero_texto{
+    grid-area: p1;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #735399;
+}
+
+#hero_fotos{
+    background-color: rgb(92, 6, 109);
+    grid-area: fo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero_fotos img{
+    margin: 0 auto;
+    width: 500px;
+}
+
+#hero #contato{
+    grid-area: ma;
+    background-color: rgb(92, 6, 109);
+    padding: 10px;
+}
+
+#hero ul{
+    list-style: none;
+    color: white;
+}
+
+#hero a{
+    text-decoration: none;
+}
+
+.titulo2{
+    text-align: justify;
+    border-radius: 10px;
+    padding: 8px;
+    width: 145px;
+    background-color: #d6baf7;
+    color: #4f3470;
+}
+
+#hero p, #hero h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* TELA PEQUENA */
+@media (min-width: 300px) and (max-width: 768px) { 
+    #menu_ancora{
+        grid-template-areas: 
+        "a1" 
+        "a2" 
+        "a3";
+    } #cards, #cards2{
+        justify-content: center;
+    } #hero{
+        display: grid;
+        grid-template-areas: 
+        "p1 p1"
+        "fo ma"
+        ;
+    } #hero_fotos img{
+        width: 200px;
+    }
+}

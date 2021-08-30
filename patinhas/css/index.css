@@ -1,0 +1,117 @@
+main{
+    padding-top: 30px;
+}
+
+figcaption{
+    margin-left: 15px;
+    font-weight: bold;
+}
+/* carrossel */
+#carrossel{
+    margin: 0 auto;
+    width: 90%;
+}
+
+#carrossel img{
+    height: 300px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* conteudo article */
+article{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-areas:  
+    "a1 a2";
+}
+
+article h3, article p{
+    color: white;
+    margin-top: 3px;
+    text-align: justify;
+}
+
+#artigo1{
+    padding: 20px;
+    grid-area: a1;
+    background-color: #787879;
+    overflow: auto;
+    height: 500px;
+    border-radius: 10px;
+}
+
+#artigo2{
+    padding: 20px;
+    grid-area: a2;
+    background-color: #6C439B;
+    overflow: auto;
+    height: 500px;
+    border-radius: 10px;
+}
+
+#artigo1 img, #artigo2 img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.img_artigo{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d6baf7;
+    border-radius: 16px;
+}
+
+#artigo1 a, #artigo2 a{
+    text-decoration: none;
+    color: rgb(51, 46, 46);
+}
+
+#artigo1 a:hover, #artigo2 a:hover{
+    text-decoration: none;
+    color: #696869;
+}
+/* Cards */
+#cards{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#titulo{
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #8869AD;
+    color: white;
+}
+
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card img{
+    height: 200px;
+}
+
+/* Tela reduzida */
+@media (min-width: 300px) and (max-width: 768px) { 
+    article{
+        grid-template-areas:  
+        "a1"
+        "a2";
+    }
+    #artigo1{
+        margin-bottom: 10px;
+    }
+    #cards{
+        justify-content: center;
+    }
+ }

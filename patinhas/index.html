@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- REQUISITOS ESPECÍFICOS:
+    1 - Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+    2 - JavaScript: validações.
+    3 - Css: Estilizar o rodapé usando exclusivamente css.
+    4 - HTML: Utilizar <aside> e <article>
+    Realizar comentário no código linha 4 os requisitos específicos(indice dos requisitos).
+     -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <!-- CSS PADRÃO -->
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Home</title>
+</head>
+<body>
+
+        <!-- CABEÇALHO -->
+        <header id="inicio">
+            <nav class="navbar navbar-expand-sm container-fluid">
+                
+                <!-- logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="imagens/logo.png" alt="patinhas_logo" class="logo">
+                </a>
+                
+                <!-- menu hamburguer -->
+                <button class="navbar-toggler hamburguer" data-toggle="collapse" data-target="#nav-target"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- navegação -->
+                <div class="collapse navbar-collapse" id="nav-target">  
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="cadastro.html" class="nav-link">Cadastro</a>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a id="serviços" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+                            <div class="dropdown-menu" id="sub_menu">
+                              <a href="serviços.html" class="dropdown-item">Produtos</a>
+                              <a href="serviços.html" class="dropdown-item">Pet Hero</a>
+                              <a href="serviços.html" class="dropdown-item">Adote um amigo</a>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <form class="form-inline">
+                        <label for="#pesquisa" class="sr-only">Pesquisar</label>
+                        <input type="text" id="pesquisa" placeholder="Pesquisar..." class="form-control">
+                        <button class="btn my-2 botao-grande btn-secondary">Pesquisar</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!-- CABEÇALHO FIM-->
+        
+        <!-- BOTOES ALTERAM LAYOUT -->
+        <nav class="sticky-top" id="botoes">
+            <section id="animais">
+                <img src="imagens/animais3.png" alt="animais">
+            </section>
+
+            <section id="botoes_layaout">
+                <button class="btn btn-secondary" id="btnFontMenor">A-</button>
+                <button class="btn btn-secondary" id="btnFontMaior">A+</button>
+                <button class="btn btn-secondary" id="noturno">
+                    <img src="imagens/noturno.png" alt="botao noturno">
+                </button>
+            </section>
+
+            <section id="topo1">
+                <a href="#inicio" class="btn btn-secondary" id="topo2" href="#inicio">
+                    <img src="imagens/seta.png" alt="voltar ao topo">
+                </a>
+            </section>
+        </nav>
+        <!-- BOTOES ALTERAM LAYOUT FIM-->
+
+        <!--Início LIBRAS-->
+        <div vw class="enabled" id="libras">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+        </div>
+        <!--FIM LIBRAS-->
+
+        <!-- CONTAINER PRINCIPAL -->
+        <main class="container-fluid">
+            
+            <section id="carrossel">
+              <!-- Início CARROSSEL -->
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="https://www.youtube.com/watch?v=yi-KQ3CKOQU" target="blank">
+                      <img class="d-block" src="imagens/foto5.jpeg" alt="First slide">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://www.youtube.com/watch?v=yi-KQ3CKOQU" target="blank">
+                      <img class="d-block" src="imagens/foto1.jpeg" alt="Second slide">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://www.youtube.com/watch?v=yi-KQ3CKOQU" target="blank">
+                      <img class="d-block" src="imagens/foto4.jpeg" alt="Third slide">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
+                <!-- FIM CARROSSEL -->
+              </section>
+              
+
+              <!-- ARTIGO INICICO -->
+              <article class="col col-12 container-fluid">
+                <section id="artigo1" class="mx-2">
+                  <section class="img_artigo">
+                    <a href="#gato">
+                      <figure>
+                        <img src="imagens/gato.png" alt="gatos">
+                        <figcaption>Gatos</figcaption>
+                      </figure>
+                    </a>
+                    <a href="#cao">
+                      <figure>
+                        <img src="imagens/cachorro.png" alt="cães">
+                        <figcaption>Cães</figcaption>
+                      </figure>
+                    </a>
+                    <a href="#coelho">
+                      <figure>
+                        <img src="imagens/coelho.png" alt="coelhos">
+                        <figcaption>Coelhos</figcaption>
+                      </figure>
+                    </a>
+                  </section>
+                  
+                  <h3 id="gato">Gatos</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, rerum dignissimos. Laboriosam necessitatibus temporibus asperiores sunt ab facilis doloremque, similique vel nesciunt dolorum, suscipit dicta eos illo cupiditate expedita in!
+                    <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque facilis atque minima accusantium, aperiam soluta qui culpa impedit eum sequi doloremque molestias dolores laborum, corrupti autem minus in voluptas deleniti.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores maxime explicabo suscipit dignissimos iste eos dolore perspiciatis doloribus pariatur modi! Pariatur rerum illo nihil veritatis. Voluptatibus, animi voluptatum. Vero, quia.
+                  </p>
+
+                  <h3 id="cao">Cães</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, rerum dignissimos. Laboriosam necessitatibus temporibus asperiores sunt ab facilis doloremque, similique vel nesciunt dolorum, suscipit dicta eos illo cupiditate expedita in!
+                    <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque facilis atque minima accusantium, aperiam soluta qui culpa impedit eum sequi doloremque molestias dolores laborum, corrupti autem minus in voluptas deleniti.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores maxime explicabo suscipit dignissimos iste eos dolore perspiciatis doloribus pariatur modi! Pariatur rerum illo nihil veritatis. Voluptatibus, animi voluptatum. Vero, quia.
+                  </p>
+
+                  <h3 id="coelho">Coelhos</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, rerum dignissimos. Laboriosam necessitatibus temporibus asperiores sunt ab facilis doloremque, similique vel nesciunt dolorum, suscipit dicta eos illo cupiditate expedita in!
+                    <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque facilis atque minima accusantium, aperiam soluta qui culpa impedit eum sequi doloremque molestias dolores laborum, corrupti autem minus in voluptas deleniti.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores maxime explicabo suscipit dignissimos iste eos dolore perspiciatis doloribus pariatur modi! Pariatur rerum illo nihil veritatis. Voluptatibus, animi voluptatum. Vero, quia.
+                  </p>
+                </section>
+
+                <section id="artigo2" class="mx-2">
+                  <section class="img_artigo">
+                    <a href="#ave">
+                      <figure>
+                        <img src="imagens/passaro.png" alt="Aves">
+                        <figcaption>Aves</figcaption>
+                      </figure>
+                    </a>
+                    <a href="#peixe">
+                      <figure>
+                        <img src="imagens/peixe.png" alt="Peixes">
+                        <figcaption>Peixes</figcaption>
+                      </figure>
+                    </a>
+                    <a href="#reptil">
+                      <figure>
+                        <img src="imagens/camaleao.png" alt="repteis">
+                        <figcaption>Répteis</figcaption>
+                      </figure>
+                    </a>
+                  </section>
+                  
+                  <h3 id="ave">Aves</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, rerum dignissimos. Laboriosam necessitatibus temporibus asperiores sunt ab facilis doloremque, similique vel nesciunt dolorum, suscipit dicta eos illo cupiditate expedita in!
+                    <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque facilis atque minima accusantium, aperiam soluta qui culpa impedit eum sequi doloremque molestias dolores laborum, corrupti autem minus in voluptas deleniti.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores maxime explicabo suscipit dignissimos iste eos dolore perspiciatis doloribus pariatur modi! Pariatur rerum illo nihil veritatis. Voluptatibus, animi voluptatum. Vero, quia.
+                  </p>
+
+                  <h3 id="peixe">Peixes</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, rerum dignissimos. Laboriosam necessitatibus temporibus asperiores sunt ab facilis doloremque, similique vel nesciunt dolorum, suscipit dicta eos illo cupiditate expedita in!
+                    <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque facilis atque minima accusantium, aperiam soluta qui culpa impedit eum sequi doloremque molestias dolores laborum, corrupti autem minus in voluptas deleniti.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores maxime explicabo suscipit dignissimos iste eos dolore perspiciatis doloribus pariatur modi! Pariatur rerum illo nihil veritatis. Voluptatibus, animi voluptatum. Vero, quia.
+                  </p>
+
+                  <h3 id="reptil">Répteis</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, rerum dignissimos. Laboriosam necessitatibus temporibus asperiores sunt ab facilis doloremque, similique vel nesciunt dolorum, suscipit dicta eos illo cupiditate expedita in!
+                    <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque facilis atque minima accusantium, aperiam soluta qui culpa impedit eum sequi doloremque molestias dolores laborum, corrupti autem minus in voluptas deleniti.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores maxime explicabo suscipit dignissimos iste eos dolore perspiciatis doloribus pariatur modi! Pariatur rerum illo nihil veritatis. Voluptatibus, animi voluptatum. Vero, quia.
+                  </p>
+                </section>
+              </article>
+              <!-- ARTIGO FIM -->
+
+              <section id="cards" class="container-fluid">
+                <section id="titulo" class="mx-2">
+                 <h2>Mais vendidos</h2> 
+                </section>
+                
+                <div class="card mx-2" style="width: 18rem;">
+                  <img class="card-img-top" src="imagens/racaogato.jpg" alt="ração de gato">
+                  <div class="card-body">
+                    <h5 class="card-title">Ração de gato</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                    <p>
+                      R$22,50
+                    </p>
+                    <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                  </div>
+                </div>
+
+                <div class="card mx-2" style="width: 18rem;">
+                  <img class="card-img-top" src="imagens/cachorrobiscoito.jpg" alt="ração de gato">
+                  <div class="card-body">
+                    <h5 class="card-title">Bisocito para cães</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                    <p>
+                      R$15,99
+                    </p>
+                    <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                  </div>
+                </div>
+
+                <div class="card mx-2" style="width: 18rem;">
+                  <img class="card-img-top" src="imagens/aquario.jpg" alt="ração de gato">
+                  <div class="card-body">
+                    <h5 class="card-title">Aquário grande</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                    <p>
+                      R$100,00
+                    </p>
+                    <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                  </div>
+                </div>
+
+                <div class="card mx-2" style="width: 18rem;">
+                  <img class="card-img-top" src="imagens/casadegato.jpg" alt="ração de gato">
+                  <div class="card-body">
+                    <h5 class="card-title">Casa de gato</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                    <p>
+                      R$150,00
+                    </p>
+                    <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                  </div>
+                </div>
+              </section>
+        </main>
+        <!-- CONTAINER PRINCIPAL FIM-->
+
+        <!-- RODAPÉ -->
+        <footer>
+            <section id="contato">
+                Contato: 
+                <br>
+             <a href="https://www.whatsapp.com/download/?lang=pt_br" target="blank">(xx) xx xxxx-xxxx</a> 
+                <br>
+                E-mail:
+                <br>
+              <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">patinhas@email.com</a>
+            </section>
+
+            <section id="links">
+                <a href="https://web.facebook.com/SoulCodeAcademy/?_rdc=1&_rdr" target="blank"><img src="imagens/facebook.png" alt="facebook"></a>
+                <a href="https://www.linkedin.com/company/soulcodeacademy/mycompany/" target="blank"><img src="imagens/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.instagram.com/soulcodeacademy/" target="blank"><img src="imagens/instagram.png" alt="instagram"></a>
+                <p>
+                    &copy; Patinhas, 2021
+                </p>
+            </section>
+            
+            <section id="veterinario">
+                <a href="https://www.whatsapp.com/download/?lang=pt_br" target="blank">
+                    <img src="imagens/veterinario.png" alt="veterinario">
+                    <p>veterinario</p>
+                </a>
+            </section>
+        </footer>
+        <!-- RODAPÉ FIM-->
+
+    <!-- BOOSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <!-- SCRIPTS PADRÃO -->
+    <script src="js/padrao.js"></script>
+</body>
+</html>

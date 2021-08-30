@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- REQUISITOS ESPECÍFICOS:
+    1 - Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+    2 - JavaScript: validações.
+    3 - Css: Estilizar o rodapé usando exclusivamente css.
+    4 - HTML: Utilizar <aside> e <article>
+    Realizar comentário no código linha 4 os requisitos específicos(indice dos requisitos).
+     -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <!-- CSS PADRÃO -->
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="./css/sobre.css">
+    <title>Sobre</title>
+</head>
+<body>
+
+        <!-- CABEÇALHO -->
+        <header id="inicio">
+            <nav class="navbar navbar-expand-sm container-fluid">
+                
+                <!-- logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="imagens/logo.png" alt="patinhas_logo" class="logo">
+                </a>
+                
+                <!-- menu hamburguer -->
+                <button class="navbar-toggler hamburguer" data-toggle="collapse" data-target="#nav-target"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- navegação -->
+                <div class="collapse navbar-collapse" id="nav-target">  
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="cadastro.html" class="nav-link">Cadastro</a>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a href="serviços.html" class="nav-link dropdown-toggle" data-toggle="dropdown" id="serviços">Serviços</a>
+                            <div class="dropdown-menu" id="sub_menu">
+                                <a href="serviços.html" class="dropdown-item">Produtos</a>
+                                <a href="serviços.html" class="dropdown-item">Pet Hero</a>
+                                <a href="serviços.html" class="dropdown-item">Adote um amigo</a>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <form class="form-inline">
+                        <label for="#pesquisa" class="sr-only">Pesquisar</label>
+                        <input type="text" id="pesquisa" placeholder="Pesquisar..." class="form-control">
+                        <button class="btn my-2 botao-grande btn-secondary">Pesquisar</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!-- CABEÇALHO FIM-->
+        
+        <!-- BOTOES ALTERAM LAYOUT -->
+        <nav class="sticky-top" id="botoes">
+            <section id="animais">
+                <img src="imagens/animais3.png" alt="animais">
+            </section>
+
+            <section id="botoes_layaout">
+                <button class="btn btn-secondary" id="btnFontMenor">A-</button>
+                <button class="btn btn-secondary" id="btnFontMaior">A+</button>
+                <button class="btn btn-secondary" id="noturno">
+                    <img src="imagens/noturno.png" alt="botao noturno">
+                </button>
+            </section>
+
+            <section id="topo1">
+                <a href="#inicio" class="btn btn-secondary" id="topo2" href="#inicio">
+                    <img src="imagens/seta.png" alt="voltar ao topo">
+                </a>
+            </section>
+        </nav>
+        <!-- BOTOES ALTERAM LAYOUT FIM-->
+
+        <!--Início LIBRAS-->
+        <div vw class="enabled" id="libras">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+        </div>
+        <!--FIM LIBRAS-->
+
+        <!-- CONTAINER PRINCIPAL -->
+        <main class="container-fluid" id="conteudo">
+            <section id="sobre">
+                <section id="patinhas">
+                    <img src="imagens/logo.png" alt="">
+                </section>
+                <section class="titulo3">
+                    <h3>Nossa História</h3>
+                </section>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nemo libero quaerat vero optio sunt aliquam a cum illum officiis. Voluptatibus tempora sit neque sapiente ex dicta magni consequuntur qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt eveniet deleniti, modi in voluptatum consequuntur eum aliquam explicabo eius delectus et beatae vitae illum quidem! Unde rem quaerat aliquid!
+                </p>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos quos earum labore dolores et consequuntur, eligendi laudantium ea laborum minus pariatur eveniet assumenda incidunt. Magni eum recusandae incidunt molestiae!
+                </p>
+                <section class="titulo3">
+                    <h3>Nossos Valores</h3>
+                </section>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dolores obcaecati officia laborum nemo quas nihil nostrum consectetur illum beatae, adipisci harum doloremque assumenda culpa ex et earum, nisi quasi.
+                </p>
+                <section id="lista">
+                    <ul class="lead">
+                        <li><strong> tenetur nisi alias laboriosam:</strong> <br>
+                        consectetur adipisicing elit. Doloribus animi sit laborum exercitationem ipsam corrupti rerum necessitatibus cum explicabo rem voluptatem pariatur, provident quae molestias! Est.</li>
+                        
+                        <li><strong> laboriosam corrupti nisi alias:</strong> <br>
+                            consectetur adipisicing elit. Doloribus animi sit laborum exercitationem ipsam corrupti.</li>
+                        
+                        <li><strong> consectetur adipisicing elit:</strong> <br> 
+                            Doloribus animi sit laborum exercitationem ipsam corrupti rerum necessitatibus cum explicabo rem voluptatem pariatur, tenetur nisi alias laboriosam, provident quae molestias! Est.</li>
+                        
+                        <li><strong>Lorem ipsum dolor sit amet:</strong> <br>
+                            consectetur adipisicing elit. Doloribus animi sit laborum exercitationem ipsam corrupti rerum necessitatibus cum explicabo rem voluptatem pariatur, tenetur nisi alias laboriosam, provident quae.</li>
+                    </ul>
+                </section>
+            </section>
+        </main>
+        <!-- CONTAINER PRINCIPAL FIM-->
+
+        <!-- RODAPÉ -->
+        <footer>
+            <section id="contato">
+                Contato: 
+                <br>
+             <a href="https://www.whatsapp.com/download/?lang=pt_br" target="blank">(xx) xx xxxx-xxxx</a> 
+                <br>
+                E-mail:
+                <br>
+              <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">patinhas@email.com</a>
+            </section>
+
+            <section id="links">
+                <a href="https://web.facebook.com/SoulCodeAcademy/?_rdc=1&_rdr" target="blank"><img src="imagens/facebook.png" alt="facebook"></a>
+                <a href="https://www.linkedin.com/company/soulcodeacademy/mycompany/" target="blank"><img src="imagens/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.instagram.com/soulcodeacademy/" target="blank"><img src="imagens/instagram.png" alt="instagram"></a>
+                <p>
+                    &copy; Patinhas, 2021
+                </p>
+            </section>
+            
+            <section id="veterinario">
+                <a href="https://www.whatsapp.com/download/?lang=pt_br" target="blank">
+                    <img src="imagens/veterinario.png" alt="veterinario">
+                    <p>veterinario</p>
+                </a>
+            </section>
+        </footer>
+        <!-- RODAPÉ FIM-->
+
+    <!-- BOOSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <!-- SCRIPTS PADRÃO -->
+    <script src="js/padrao.js"></script>
+</body>
+</html>

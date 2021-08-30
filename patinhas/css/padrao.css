@@ -1,0 +1,166 @@
+/* formatação geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #edf4f8;
+}
+
+p{
+    text-align: justify;
+}
+/* button, .btn{
+    border: 1px solid;
+} */
+/* media queries */
+@media (min-width: 300px) and (max-width: 576px) { 
+    form .botao-grande{
+        width: 100%;
+        margin-left: 0;
+    }
+    #libras, #animais{
+        display: none;
+    }
+ }
+
+/* cabeçalho */
+header{
+    z-index: 100;
+    background-image: linear-gradient(#8869AD,#6C439B);
+}
+
+header a{
+    color: white;
+}
+
+header a:hover{
+    color: rgb(197, 194, 194);
+}
+
+.hamburguer{
+    background-color: rgb(197, 194, 194); 
+}
+
+.hamburguer:hover{
+    background-color:#6c757d;
+}
+
+.navbar-toggler-icon{
+    background-image: url("../imagens/icone_menu.png");
+}
+
+.logo{
+    width: 65px;
+}
+
+#sub_menu{
+    background-color: rgb(197, 194, 194);
+}
+
+#sub_menu a{
+    color: black;
+}
+/* botoes fixos */
+#botoes{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #B7A5CD;
+    z-index: 80px;
+}
+
+#animais img{
+    width: 200px;
+    filter: invert(1);
+}
+
+#botoes_layaout{
+    background-origin: padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#botoes_layaout button{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#botoes_layaout img{
+    width: 19px;
+    margin-bottom: 2px;
+    filter: invert(1);
+}
+
+#topo1{
+    display: flex;
+    align-items: center;
+    width: 50px;
+}
+
+#topo2 a{
+    height: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#topo2 img{
+    width: 19px;
+}
+
+/* RODAPÉ */
+footer{
+    display: grid;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(#6C439B,#8869AD);
+}
+
+footer section{
+    color: white;
+    padding: 10px;
+}
+
+#contato a{
+    color: white;
+    text-decoration: none;
+}
+
+#contato a:hover{
+    color: rgb(197, 194, 194);
+}
+
+#links img{
+    width: 30px;
+    margin: 5px;
+    filter: invert(1);
+    margin-bottom: 30px;
+}
+
+#veterinario img{
+    filter: invert(1);
+    width: 50px;
+    margin-left: 10px;
+}
+
+#veterinario a{
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#veterinario a:hover{
+    color: rgb(197, 194, 194);
+}
+
+
+

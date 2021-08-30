@@ -1,0 +1,51 @@
+/* AREA DE FORMULARIO */
+#cadastro{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-areas: 
+    "formulario foto";
+}
+
+#formulario{
+    background-color: rgb(201, 196, 196);
+    grid-area: formulario;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+#foto{
+    background-color: rgb(138, 135, 135);
+    grid-area: foto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0 10px 10px 0;
+}
+
+#foto img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin-bottom: 5px;
+}
+
+#formulario label{
+    font-weight: 600;
+}
+
+@media (min-width: 300px) and (max-width: 768px) { 
+    #cadastro{
+        grid-template-areas:  
+        "formulario"
+        "foto";
+    }
+    #foto{
+        border-radius: 0 0 10px 10px;
+    }
+    #formulario{
+        border-radius: 10px 10px 0 0;
+    }
+}

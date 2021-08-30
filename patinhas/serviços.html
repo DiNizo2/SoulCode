@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- REQUISITOS ESPECÍFICOS:
+    1 - Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+    2 - JavaScript: validações.
+    3 - Css: Estilizar o rodapé usando exclusivamente css.
+    4 - HTML: Utilizar <aside> e <article>
+    Realizar comentário no código linha 4 os requisitos específicos(indice dos requisitos).
+     -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <!-- CSS PADRÃO -->
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="./css/serviços.css">
+    <title>Serviços</title>
+</head>
+<body>
+
+        <!-- CABEÇALHO -->
+        <header id="inicio">
+            <nav class="navbar navbar-expand-sm container-fluid">
+                
+                <!-- logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="imagens/logo.png" alt="patinhas_logo" class="logo">
+                </a>
+                
+                <!-- menu hamburguer -->
+                <button class="navbar-toggler hamburguer" data-toggle="collapse" data-target="#nav-target"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- navegação -->
+                <div class="collapse navbar-collapse" id="nav-target">  
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="cadastro.html" class="nav-link">Cadastro</a>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a href="serviços.html" class="nav-link dropdown-toggle" data-toggle="dropdown" id="serviços">Serviços</a>
+                            <div class="dropdown-menu" id="sub_menu">
+                                <a href="serviços.html" class="dropdown-item">Produtos</a>
+                                <a href="serviços.html" class="dropdown-item">Pet Hero</a>
+                                <a href="serviços.html" class="dropdown-item">Adote um amigo</a>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <form class="form-inline">
+                        <label for="#pesquisa" class="sr-only">Pesquisar</label>
+                        <input type="text" id="pesquisa" placeholder="Pesquisar..." class="form-control">
+                        <button class="btn my-2 botao-grande btn-secondary">Pesquisar</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!-- CABEÇALHO FIM-->
+        
+        <!-- BOTOES ALTERAM LAYOUT -->
+        <nav class="sticky-top" id="botoes">
+            <section id="animais">
+                <img src="imagens/animais3.png" alt="animais">
+            </section>
+
+            <section id="botoes_layaout">
+                <button class="btn btn-secondary" id="btnFontMenor">A-</button>
+                <button class="btn btn-secondary" id="btnFontMaior">A+</button>
+                <button class="btn btn-secondary" id="noturno">
+                    <img src="imagens/noturno.png" alt="botao noturno">
+                </button>
+            </section>
+            
+            <section id="menu_ancora"> 
+                <a class="btn botao_link" href="#titulo">Produtos</a>
+                <a class="btn botao_link" href="#hero">Pet Hero</a>
+                <a class="btn botao_link" href="#cards2">Adote um amigo</a>
+            </section>
+            
+            <section id="topo1">
+                <a href="#inicio" class="btn btn-secondary" id="topo2" href="#inicio">
+                    <img src="imagens/seta.png" alt="voltar ao topo">
+                </a>
+            </section>
+        </nav>
+        <!-- BOTOES ALTERAM LAYOUT FIM-->
+
+        <!--Início LIBRAS-->
+        <div vw class="enabled" id="libras">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+        </div>
+        <!--FIM LIBRAS-->
+
+        <!-- CONTAINER PRINCIPAL -->
+        <main class="container-fluid">
+            <section id="cards" class="container-fluid">
+                <section id="titulo" class="mx-2">
+                 <h2>Produtos</h2> 
+                </section>
+                
+                <div class="card mx-2" style="width: 18rem;">
+                  <img class="card-img-top" src="imagens/racaogato.jpg" alt="ração de gato">
+                  <div class="card-body">
+                    <h5 class="card-title">Ração de gato</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                    <p>
+                      R$22,50
+                    </p>
+                    <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                  </div>
+                </div>
+
+                <div class="card mx-2" style="width: 18rem;">
+                  <img class="card-img-top" src="imagens/cachorrobiscoito.jpg" alt="ração de gato">
+                  <div class="card-body">
+                    <h5 class="card-title">Biscoito para cães</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                    <p>
+                      R$15,99
+                    </p>
+                    <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                  </div>
+                </div>
+
+                <div class="card mx-2" style="width: 18rem;">
+                  <img class="card-img-top" src="imagens/aquario.jpg" alt="ração de gato">
+                  <div class="card-body">
+                    <h5 class="card-title">Aquário grande</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                    <p>
+                      R$100,00
+                    </p>
+                    <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                  </div>
+                </div>
+
+                <div class="card mx-2" style="width: 18rem;">
+                  <img class="card-img-top" src="imagens/casadegato.jpg" alt="ração de gato">
+                  <div class="card-body">
+                    <h5 class="card-title">Casa de gato</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                    <p>
+                      R$150,00
+                    </p>
+                    <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                  </div>
+                </div>
+                
+                <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/briquedos.jpg" alt="briquedos">
+                    <div class="card-body">
+                      <h5 class="card-title">Brinquedos</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                      <p>
+                        R$8,00
+                      </p>
+                      <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                    </div>
+                  </div>
+  
+                  <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/gaiola.jpg" alt="erva de gato">
+                    <div class="card-body">
+                      <h5 class="card-title">Casinha de Hamster</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                      <p>
+                        R$78,99
+                      </p>
+                      <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                    </div>
+                  </div>
+  
+                  <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/acessorios.jpg" alt="acessorios">
+                    <div class="card-body">
+                      <h5 class="card-title">Acessórios</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                      <p>
+                        R$80,00
+                      </p>
+                      <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                    </div>
+                  </div>
+  
+                  <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/coleira.jpg" alt="coleiras">
+                    <div class="card-body">
+                      <h5 class="card-title">Coleiras</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem ullam laborum incidunt eos.</p>
+                      <p>
+                        R$87,00
+                      </p>
+                      <a href="cadastro.html" class="btn btn-secondary">Carrinho</a>
+                    </div>
+                  </div>
+              </section>
+              
+              <!-- PET HERO -->
+              <section id="hero" class="container-fluid">
+                <!-- 1 -->
+                <section id="hero_texto">
+                    <section class="titulo2">
+                        <h2>Pet Hero</h2> 
+                    </section>
+                    <h3>Sobre</h3>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sit quaerat voluptatum aliquid quia similique dicta ipsa ad magni reiciendis velit unde cumque dolores laudantium quod tenetur delectus, omnis repellendus.
+                    </p>
+                    <h3>Curiosidades</h3>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sit quaerat voluptatum aliquid quia similique dicta ipsa ad magni reiciendis velit unde cumque dolores laudantium quod tenetur delectus, omnis repellendus. <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequuntur voluptates voluptatem odio tenetur nemo dicta laboriosam, qui fugiat quam. Perspiciatis neque in sequi? Dolorem quisquam in repellat obcaecati pariatur.
+                    </p>
+                    <h3>Contribuidores</h3>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sit quaerat voluptatum aliquid quia similique dicta ipsa ad magni reiciendis velit unde cumque dolores laudantium quod tenetur delectus, omnis repellendus.
+                    </p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex mollitia vero saepe vel odit, quam sunt magni eveniet nesciunt accusantium delectus aperiam ea non laboriosam iure, quae, cupiditate officiis!
+                    </p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex mollitia vero saepe vel odit, quam sunt magni eveniet nesciunt accusantium delectus aperiam ea non laboriosam iure, quae, cupiditate officiis!
+                    </p>
+                    
+                </section>
+                
+                <aside id="hero_fotos">
+                    <img src="imagens/pethero.jpg" alt="pethero">
+                </aside>
+
+                <aside id="contato">
+                    <h3>Quero ser um Pet Hero</h3>
+                    <ul>
+                        <li>
+                            Telefone:
+                            <br>
+                           <a href="#">(xx) xxxx-xxxx</a>
+                        </li>
+                        <li>
+                            E-mail:
+                            <br>
+                           <a href="#">queroserHero@email.com</a>
+                        </li>
+                    </ul>
+                    
+                    <h3>Contratar Pet Hero</h3>
+                    <ul>
+                        <li>
+                            Telefone:
+                            <br>
+                           <a href="#">(xx) xxxx-xxxx</a>
+                        </li>
+                        <li>
+                            E-mail:
+                            <br>
+                           <a href="#">contrateHero@email.com</a>
+                        </li>
+                    </ul>
+                    
+                </aside>
+              
+            </section>
+            <!-- ADOÇÃO -->
+            <section id="cards2" class="container-fluid">
+                <section id="titulo" class="mx-2">
+                 <h2>Adote um amigo</h2> 
+                </section>
+                <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/adote1.jpg" alt="gatinhos">
+                    <div class="card-body">
+                      <h5 class="card-title">Gatinhos</h5>
+                      <p class="card-text">Some quick example text to build on.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><strong>Cidade:</strong> Curitiba</li>
+                      <li class="list-group-item"><strong>Quantidade:</strong> 5</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="cadastro.html" class="card-link">Eu Quero!!!</a>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/adote2.jpg" alt="floki">
+                    <div class="card-body">
+                      <h5 class="card-title">Floki</h5>
+                      <p class="card-text">Some quick example text to build on.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><strong>Cidade:</strong> São Paulo</li>
+                      <li class="list-group-item"><strong>Quantidade:</strong> 1</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="cadastro.html" class="card-link">Eu Quero!!!</a>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/adote3.jpg" alt="joão frango">
+                    <div class="card-body">
+                      <h5 class="card-title">João Frango</h5>
+                      <p class="card-text">Some quick example text to build on.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><strong>Cidade:</strong> Rio de Janeiro</li>
+                      <li class="list-group-item"><strong>Quantidade:</strong> 1</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="cadastro.html" class="card-link">Eu Quero!!!</a>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/adote4.jpg" alt="Zóiudin">
+                    <div class="card-body">
+                      <h5 class="card-title">Zóiudin</h5>
+                      <p class="card-text">Some quick example text to build on.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><strong>Cidade:</strong> Salvador</li>
+                      <li class="list-group-item"><strong>Quantidade:</strong> 1</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="cadastro.html" class="card-link">Eu Quero!!!</a>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/adote5.jpg" alt="tartarugas">
+                    <div class="card-body">
+                      <h5 class="card-title">Tartarugas</h5>
+                      <p class="card-text">Some quick example text to build on.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><strong>Cidade:</strong> Salvador</li>
+                      <li class="list-group-item"><strong>Quantidade:</strong> 4</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="cadastro.html" class="card-link">Eu Quero!!!</a>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/adote6.png" alt="caramelo">
+                    <div class="card-body">
+                      <h5 class="card-title">Caramelo</h5>
+                      <p class="card-text">Some quick example text to build on.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><strong>Cidade:</strong> Curitiba</li>
+                      <li class="list-group-item"><strong>Quantidade:</strong> 1</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="cadastro.html" class="card-link">Eu Quero!!!</a>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/adote7.jpg" alt="hamster">
+                    <div class="card-body">
+                      <h5 class="card-title">Hamsters</h5>
+                      <p class="card-text">Some quick example text to build on.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><strong>Cidade:</strong> Londrina</li>
+                      <li class="list-group-item"><strong>Quantidade:</strong> 100</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="cadastro.html" class="card-link">Eu Quero!!!</a>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="card mx-2" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/adote8.jpg" alt="dinossauro">
+                    <div class="card-body">
+                      <h5 class="card-title">Barney</h5>
+                      <p class="card-text">Some quick example text to build on.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><strong>Cidade:</strong> Rio Branco</li>
+                      <li class="list-group-item"><strong>Quantidade:</strong> 1</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="cadastro.html" class="card-link">Eu Quero!!!</a>
+                    </div>
+                </div>
+            
+            </section>
+        </main>
+        <!-- CONTAINER PRINCIPAL FIM-->
+
+        <!-- RODAPÉ -->
+        <footer>
+            <section id="contato">
+                Contato: 
+                <br>
+             <a href="https://www.whatsapp.com/download/?lang=pt_br" target="blank">(xx) xx xxxx-xxxx</a> 
+                <br>
+                E-mail:
+                <br>
+              <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">patinhas@email.com</a>
+            </section>
+
+            <section id="links">
+                <a href="https://web.facebook.com/SoulCodeAcademy/?_rdc=1&_rdr" target="blank"><img src="imagens/facebook.png" alt="facebook"></a>
+                <a href="https://www.linkedin.com/company/soulcodeacademy/mycompany/" target="blank"><img src="imagens/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.instagram.com/soulcodeacademy/" target="blank"><img src="imagens/instagram.png" alt="instagram"></a>
+                <p>
+                    &copy; Patinhas, 2021
+                </p>
+            </section>
+            
+            <section id="veterinario">
+                <a href="https://www.whatsapp.com/download/?lang=pt_br" target="blank">
+                    <img src="imagens/veterinario.png" alt="veterinario">
+                    <p>veterinario</p>
+                </a>
+            </section>
+        </footer>
+        <!-- RODAPÉ FIM-->
+
+    <!-- BOOSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <!-- SCRIPTS PADRÃO -->
+    <script src="js/padrao.js"></script>
+</body>
+</html>
