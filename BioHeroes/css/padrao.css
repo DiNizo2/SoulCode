@@ -1,0 +1,201 @@
+/* Estilo geral */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #2E2E2E; 
+    /* background-color: #3C4043; */
+}
+
+body{
+    font-family: "Robot", sans-serif;
+    background-color: rgb(238,238,238);
+    background: url(../imagens/bkg1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+/* Estilo de cabeçalho */
+#nav-target ul{
+    /* margin-left: 32vw; */
+    width: 100%;
+    
+    display: flex;
+    justify-content: end;
+    font-size: large;
+} 
+
+#nav-target ul li{
+   /* margin-right: 30px; */
+   font-size: large;
+} 
+
+header a{
+    color: rgb(170, 167, 167);
+}
+
+header a:hover{
+    color: white;
+}
+
+#logo{
+    width: 75px;
+    margin-left: 20px;
+}
+
+.hamburguer img{
+    filter: invert(1);
+    width: 50px;
+}
+
+#botoes{
+    padding: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(#575B5E, #3C4043); 
+    /* background-color: #575B5E; */
+    
+}
+
+#botoes a{
+    color: rgb(197, 194, 194);
+    text-decoration: none;
+}
+
+#botoes a:hover{
+    color: white;
+}
+
+#btnFontMenor, #btnFontMaior, #topo{
+    box-shadow: 0px 0px 5px;
+}
+
+#btnFontMenor:hover, #btnFontMaior:hover, #topo:hover{
+    background-color: #2E2E2E;
+    color: white;
+}
+
+#insignia{
+    display: flex;
+    height: 60px;
+}
+
+#insignia a{
+    margin-right: 10px;
+}
+
+#trofeu figcaption, #insignia figcaption{
+    width: 26px;
+    text-align: center;
+}
+
+#trofeu{
+    width: 148px;
+    margin-left: 10px;
+    height: 60px;
+}
+
+#trofeu img, #insignia img{
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#trofeu a{
+    text-decoration: none;
+    border: none;
+}
+
+#nivel{
+    margin-right: 20px;
+}
+
+#topo{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#topo2 img{
+    width: 30px;
+    filter: invert(1);
+}
+
+#acessibilidade{
+    /* margin-right: 105px; */
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+#acessibilidade button, #acessibilidade a{
+    background-color: #eeeeee;
+}
+
+/* Footer */
+footer{
+    background-color: #eeeeee;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+h6{
+    color: rgb(153,0,0);
+    font-family: "Roboto", sans-serif;
+}
+
+.text_rodape{
+    color: rgb(153,0,0);
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+}
+
+.copy_back{
+    background-color: rgb(153,0,0);
+    color: white;
+}
+
+span{
+    font-size: x-large;
+}
+
+.conteudo_footer{
+    height: 25vh;
+}
+
+/* Tela reduzida */
+@media (min-width: 300px) and (max-width: 768px) { 
+     #nav-target ul{
+        margin-left: 0;
+    } #trofeu{
+        width: 80px;
+    } iframe{
+        height: 230.5px;
+    }
+    #btnFontMenor, #btnFontMaior, #libras{
+        display: none;
+    } #topo{
+        margin-left: 35px;
+    } #insignia{
+        margin-left: 3px;
+    }
+}
+

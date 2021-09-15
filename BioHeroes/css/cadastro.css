@@ -1,0 +1,63 @@
+/* AREA DE FORMULARIO */
+#cadastro{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-areas: 
+    "formulario foto";
+}
+
+#formulario{
+    /* background-color: rgb(201, 196, 196); */
+    /* background-color: rgb(153,0,0); */
+    /* background-image: linear-gradient(rgb(153,0,0), #2E2E2E); */
+    background-image: linear-gradient(#2e2e2eea,rgb(153,0,0));
+   
+    grid-area: formulario;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+
+#cadastrar{
+    background-image: linear-gradient(rgb(228, 228, 228), white);
+}
+
+#foto{
+    /* background-color: rgb(138, 135, 135); */
+    /* background-color: rgb(153,0,0); */
+    /* background-color: #2E2E2E; */
+    background-image: linear-gradient(#2e2e2eea,rgb(153,0,0));
+    grid-area: foto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0 10px 10px 0;
+}
+
+#foto img{
+    width: 300px;
+    height: 500px;
+    margin-bottom: 5px;
+}
+
+#formulario label{
+    font-weight: 600;
+}
+
+@media (min-width: 300px) and (max-width: 768px) { 
+    #cadastro{
+        grid-template-areas:  
+        "formulario"
+        "foto";
+    }
+    #foto{
+        border-radius: 0 0 10px 10px;
+        background-image: linear-gradient(rgb(153,0,0),#2e2e2eea);
+    }
+    #formulario{
+        border-radius: 10px 10px 0 0;
+    }
+}

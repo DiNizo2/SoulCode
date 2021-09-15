@@ -1,0 +1,19 @@
+body{
+    font-size: 19px;
+}
+
+.card{
+    margin-bottom: 30px;
+    padding: 20px; 
+    color: rgb(211, 211, 211);
+    background-image: linear-gradient(#b9c0c5, #3C4043);
+}
+
+.card p{
+    font-size: small;
+}
+
+.card h6{
+    color: rgb(211, 211, 211);
+    font-size: large;
+}
