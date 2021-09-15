@@ -1,2 +1,12 @@
 # SoulCode
 Projetos realizados durante o Bootcamp SoulCode Academy
+
+Cinema: https://lnkd.in/d6EgNHq8
+<br>
+Div Textil:
+<br>
+Conversor de moeda:
+<br>
+Patinhas: DiNizo2.github.io/patinhas/
+<br>
+Bio Heroes: DiNizo2.github.io/BioHeroes/
