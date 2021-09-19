@@ -3,7 +3,7 @@ Projetos realizados durante o Bootcamp SoulCode Academy
 
 Cinema: https://lnkd.in/d6EgNHq8
 <br>
-Div Textil:
+Div Textil: https://dinizo2.github.io/DivTextil/
 <br>
 Conversor de moeda: https://dinizo2.github.io/conversor/
 <br>
