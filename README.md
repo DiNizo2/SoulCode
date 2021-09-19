@@ -5,7 +5,7 @@ Cinema: https://lnkd.in/d6EgNHq8
 <br>
 Div Textil:
 <br>
-Conversor de moeda:
+Conversor de moeda: https://dinizo2.github.io/conversor/
 <br>
 Patinhas: DiNizo2.github.io/patinhas/
 <br>
