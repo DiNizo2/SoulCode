@@ -4,11 +4,11 @@ Este repositório tem como intúito armazenar as principais atividades e projeto
 ### **Conteúdos:**
 CURSOS | PROJETOS | 
 :---: | ---: | 
-HTML5 | <a href="#">Cinema</a>
-CSS3 | <a href="#">Div Têxtil</a> 
-JS | <a href="#">Conversor de Moedas</a>
-BOOTSTRAP | <a href="#">Patinhas</a>
-HACKATHON ESG | <a href="#">Bio Heroes</a>
+HTML5 | <a href="https://github.com/DiNizo/SoulCode#cinema">Cinema</a>
+CSS3 | <a href="https://github.com/DiNizo/SoulCode#div-t%C3%AAxtil">Div Têxtil</a> 
+JS | <a href="https://github.com/DiNizo/SoulCode#conversor-de-moedas-js">Conversor de Moedas</a>
+BOOTSTRAP | <a href="https://github.com/DiNizo/SoulCode#patinhas">Patinhas</a>
+HACKATHON ESG | <a href="https://github.com/DiNizo/SoulCode#bio-heroes">Bio Heroes</a>
 
 ***
 
