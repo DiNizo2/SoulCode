@@ -1,30 +1,30 @@
 # SoulCode
 Projetos realizados durante o Bootcamp SoulCode Academy
 
-## Cinema  
+### Cinema  
 Site: https://lnkd.in/d6EgNHq8
 <br>
-Código: 
+Código: https://github.com/DiNizo/SoulCode/tree/main/cinema
 
-## Div Textil 
+### Div Textil 
 Site: https://dinizo2.github.io/DivTextil/
 <br>
-Código:
+Código: https://github.com/DiNizo/SoulCode/tree/main/DivTextil
 
 
-## Conversor de moedas JS
+### Conversor de moedas JS
 Site: https://dinizo2.github.io/conversor/
 <br>
-Código:
+Código: https://github.com/DiNizo/SoulCode/tree/main/moeda
 
 
-## Patinhas: 
+### Patinhas: 
 Site: <a href="https://dinizo2.github.io/patinhas/">Patinhas</a>
 <br>
-Código:
+Código: https://github.com/DiNizo/SoulCode/tree/main/patinhas
 
-## Bio Heroes
+### Bio Heroes
 
 Site: <a href="https://dinizo2.github.io/BioHeroes/">Bio Heroes</a>
 <br>
-Código: 
+Código: https://github.com/DiNizo/SoulCode/tree/main/BioHeroes
